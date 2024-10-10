@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Container centralizado */
+.container {
+    background-color: #111;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 800px; /* Limite de largura ajustado para verticalidade */
+    width: 100%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+/* Títulos */
+h1 {
+    color: #0dfc03;
+    font-size: 2.5em; /* Tamanho ajustado para desktop */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em; /* Texto um pouco menor para a verticalidade */
+    margin-bottom: 30px;
+}
+
+/* Seção de Imagens e Capas */
+.imagens-capa {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.botoes {
+    margin-top: 30px;
+}
+
+.botoes button {
+    background-color: #0dfc03;
+    color: #111;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+.botoes button {
+    background-color: #00b33c;
+}
+
+
+.assista-jeito {
+    background-color: #1c1e29;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Colocando em formato de coluna */
+    align-items: center;
+    max-width: 800px; /* Limite de largura ajustado para a verticalidade */
+    width: 100%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+
+.assista-jeito .imagem {
+    max-width: 100%; 
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.assista-jeito .texto {
+    margin-top: 40px; 
+    max-width: 600px;
+}
+
+.assista-jeito .texto h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.assista-jeito .texto p {
+    font-size: 1.2em;
+    color: #b0b3c6;
+}
+
+
+.secao-combo {
+    display: flex;
+    flex-direction: column; /* Alinhando verticalmente */
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    background-color: #000;
+    margin-bottom: 40px;
+}
+
+
+.texto-combo {
+    max-width: 600px;
+    text-align: center; /* Texto centralizado */
+}
+
+.texto-combo p {
+    font-size: 1.5em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+.botao-assine {
+    background-color: #00b33c;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botao-assine:hover {
+    background-color: #009933;
+}
+
+
+.imagens-combo {
+    display: flex;
+    flex-direction: column; /* Colocando imagens em formato de coluna */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagens-combo img {
+    max-width: 80%; /* Ajuste de tamanho para o layout vertical */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .assista-jeito {
+        padding: 20px;
+    }
+
+    .assista-jeito .text h2 {
+        font-size: 1.8em;
+    }
+
+    .texto-combo p {
+        font-size: 1.2em;
+    }
+
+    .botao-assine {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+.usuarios{
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .h1 {
+            font-size: 2em;
+            margin-bottom: 50px;
+        }
+        .dispositivos {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .dispositivo {
+            text-align: center;
+        }
+        .dispositivo img {
+            max-width: 100px;
+            margin-bottom: 15px;
+        }
+        .dispositivo p {
+            font-size: 1.2em;
+        }
+.ultima{
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+            background-color: #333;
+            color: white;
+            font-size: 1em;
+        }
+        textarea {
+            height: 150px;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            border: none;
+            background-color: #00c700;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #00a300;
+        }
+        .footer {
+            background-color: #111;
+            color: #666;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            color: white;
+        }
+        .logo {
+            margin-top: 20px;
+        }
